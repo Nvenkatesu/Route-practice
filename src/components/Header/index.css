@@ -1,0 +1,82 @@
+/* Write your CSS code here */
+
+.header-container {
+  width: 90%;
+  max-width: 1140px;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  width: 120px;
+  height: 60px;
+}
+.items-list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 765px) {
+  .items-list {
+    display: none;
+  }
+  .sm-img-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  }
+  .header-logo {
+    width: 90px;
+    height: 30px;
+  }
+  .header-container {
+    flex-direction: column;
+  }
+  .nav-items {
+    margin-top: 20px;
+    background-color: #e6f6ff;
+    border-radius: 5px;
+    border-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  .nav-home {
+    height: 30px;
+    width: 30px;
+  }
+}
+.item {
+  font-size: 15px;
+  color: #475569;
+}
+.log-out {
+  background-color: #0b69ff;
+  color: #ffffff;
+  height: 30px;
+  width: 90px;
+  border-radius: 4px;
+  border-style: none;
+}
+.nav-logout {
+  height: 30px;
+  width: 30px;
+}
+@media screen and (min-width: 765px) {
+  .nav-logout {
+    display: none;
+  }
+  .nav-items {
+    display: none;
+  }
+}
+.link {
+  text-decoration: none;
+}
